@@ -236,7 +236,6 @@ init -265 python:
     def Desat1(id, brightness = -0.4, saturation = 0.35):
         return im.MatrixColor(ImageReference(id), im.matrix.brightness(brightness) *  im.matrix.saturation(saturation))
         
-    #Пресеты без возможности настройки
     #Мику-матрица
     def SS_com(id):
         return im.MatrixColor(ImageReference(id), im.matrix.brightness(-0.2) * im.matrix.contrast(1.6) * im.matrix.saturation(0)* im.matrix.colorize("#0aa", "#000"))
